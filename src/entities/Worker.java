@@ -60,6 +60,14 @@ public class Worker {
 		
 	}
 	
+	public Departament getDepartament() {
+		return departament;
+	}
+	
+	public void setDepartament(Departament departament) {
+		this.departament = departament;
+	}
+	
 	
 	
 	public double income(int year, int mounth) {
