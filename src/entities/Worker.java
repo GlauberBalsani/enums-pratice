@@ -17,11 +17,14 @@ public class Worker {
 	public Worker() {
 	}
 	
-	public Worker(String name, WorkerLevel level, Double baseSalary) {
+	public Worker(String name, WorkerLevel level, Double baseSalary, Departament departament) {
 		this.name = name;
 		this.level = level;
 		this.baseSalary = baseSalary;
+		this.departament = departament;
 	}
+
+
 
 	public String getName() {
 		return name;
@@ -56,6 +59,8 @@ public class Worker {
 		contracts.remove(contract);
 		
 	}
+	
+	
 	
 	public double income(int year, int mounth) {
 		double sum = baseSalary;

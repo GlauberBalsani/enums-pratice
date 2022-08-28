@@ -3,9 +3,10 @@ package aplication;
 import java.util.Locale;
 import java.util.Scanner;
 
-
+import entities.Departament;
 import entities.Worker;
-import entities.WorkerLevel;
+import entities.enums.WorkerLevel;
+
 
 public class Main {
 
@@ -23,8 +24,7 @@ public class Main {
 		System.out.print("Base salary: ");
 		double baseSalary = sc.nextDouble();
 		
-		Worker worker = new Worker(workerName, null, null, null)
-		
+		Worker worker = new Worker(workerName, WorkerLevel.valueOf(workerLevel), baseSalary, new Departament(departamentName));
 		
 	}
 
